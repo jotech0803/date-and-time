@@ -20,6 +20,8 @@ public class TimeAndDateHandler
     private Time    theTime;
     private long    milliSecs;
 
+
+    //returns the current date, printing out it out to the command line as it does so
     public  String  getDate()
     {
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
@@ -28,16 +30,17 @@ public class TimeAndDateHandler
         return dateFormat.format(theDate);
     }
 
+      //returns the current time, printing it out
     public  String  getTime()
     {
         DateFormat dateFormat = new SimpleDateFormat("HH:mm");
         theDate = new Date();
-        System.out.println(dateFormat.format(theDate)); //2014/08/06 15:59:48
-
+        System.out.println(dateFormat.format(theDate));
         return dateFormat.format(theDate);
-        //return "11:42";
+
     }
 
+    //main method, gets the date and time
     public static void main( String[] args )
     {
         TimeAndDateHandler tadh = new TimeAndDateHandler();
