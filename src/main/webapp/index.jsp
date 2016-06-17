@@ -12,16 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-    <%
-      for( int x = 0; x < 50; x++ )
-      {
-    %>
-
-        <h1>Hello World from DevOps guys!</h1>
+        <h1>Hello World</h1>
         <h1><%=tadBean.getDate()%> - <%=tadBean.getTime()%></h1>
-    <%
-        }
-    %>
     </body>
 
 </html>
